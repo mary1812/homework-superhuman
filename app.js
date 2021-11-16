@@ -12,4 +12,8 @@ app.get('/heros', async function (req, res, next) {
 
 app.post('/hero', heroController.createHero);
 
+app.patch('/hero/:id', heroController.updateHero);
+
+app.delete('/hero/:id', heroController.deleteHero);
+
 module.exports = app;
