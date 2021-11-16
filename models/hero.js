@@ -11,7 +11,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      
+      Hero.belongsToMany(models.Superpower, {
+        through: 'hero_to_powers',
+        foreignKey: 'heroId'
+      })
     }
   };
   Hero.init({
