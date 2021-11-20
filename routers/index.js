@@ -1,13 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const heroController = require('../controllers/heroController');
 
-// router.get('/heros');
+const heroRouter = require('./heroRouter');
 
-router.post('/hero', heroController.createHero);
+router.use('/hero', heroRouter);
 
-router.patch('/hero/:id', heroController.updateHero);
 
-router.delete('/hero/:id', heroController.deleteHero);
 
 module.exports = router;
