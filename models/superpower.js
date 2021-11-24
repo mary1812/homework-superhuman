@@ -12,7 +12,6 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       Superpower.belongsTo(models.Hero, {
-        through: 'hero_to_powers',
         foreignKey: 'heroId'
       })
     }
@@ -30,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'Superpower',
     underscored: true,
-    tableName: 'superpower'
+    tableName: 'superpowers'
   });
   return Superpower;
 };
