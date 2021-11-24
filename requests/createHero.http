@@ -2,8 +2,9 @@ POST http://localhost:3000/api/hero HTTP/1.1
 Content-Type: application/json 
 
 {
-  "nickname": "Petya",
+  "nickname": "Valera",
   "realName": "Pupkin",
-  "originDescription": "HeOn finding the old sage, Strange becomes his acolyte.",
-  "catchPhrase": "s, we only learn to live above them."
+  "originDescription": "He Strange",
+  "catchPhrase": "ive above them.",
+  "superPowers":["fly","jump","bite"]
 }
